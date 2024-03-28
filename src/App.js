@@ -1,25 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; // Import your CSS file containing styles
 
-function App() {
+const HomePage = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg"> {/* Apply background to the entire body */}
+      <div className="homePage">
+        {/* Your existing content here */}
+        <div className="frameParent">
+          <div className="frameWrapper">
+            <div className="planetEarthLogoParent">
+              <div className="planetEarthLogo">
+                <div className="planetEarthLogoChild" />
+                <img
+                  className="planetEarthWithPlantLogoDIcon"
+                  loading="lazy"
+                  alt="khjpipi"
+                  src="baby-leaf22.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="provideYourHouseOfficeSpParent">
+            <div className="leafImagesParent">
+              <div className="leafImages" />
+              <div className="leafImages1" />
+              <img
+                className="leafPlantLeavesFlowerPngFIcon"
+                alt=""
+                src="leaf2.png"
+              />
+              <img
+                className="istockphoto1180581523612x612Icon"
+                alt="leaf1"
+                src="leaf1.png"
+              />
+            </div>
+          </div>
+        </div>
+        {/* Signup Form */}
+        <form className="sign-up-form">
+          <h2 className="title">Sign Up</h2>
+
+          <div className="input-field">
+            <i className="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div className="input-field">
+
+            <input type="password" placeholder="Password" />
+          </div>
+          <input type="submit" value="Sign Up" className="btn" />
+
+        </form>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default HomePage;
